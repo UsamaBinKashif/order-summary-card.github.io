@@ -1,0 +1,130 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--Pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  width: 320px;
+  height: 500px;
+  background-color: var(--Very-pale-blue);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container > img {
+  width: 320px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 12px;
+  text-align: center;
+}
+.main > h2 {
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+.main > p {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  background-color: var(--Pale-blue);
+  padding: 0.7rem;
+  border-radius: 15px;
+}
+article > img {
+  border: 1px solid var(--Desaturated-blue);
+  border-radius: 50px;
+}
+article > p {
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+article > p > span {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+}
+
+article > a {
+  color: var(--Bright-blue);
+}
+article > a:hover {
+  color: var(--Desaturated-blue);
+}
+
+button {
+  padding: 1rem;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.paymentBtn {
+  background-color: var(--Bright-blue);
+  color: var(--white);
+  font-weight: 800;
+  box-shadow: 0 20px 5px var(--Pale-blue);
+}
+.paymentBtn:hover {
+  background-color: var(--Desaturated-blue);
+  box-shadow: 0 0 0 0;
+  color: var(--white);
+}
+.cancelBtn {
+  color: var(--Desaturated-blue);
+  background-color: var(--Very-pale-blue);
+  font-weight: 800;
+}
+.cancelBtn:hover {
+  color: var(--Dark-blue);
+}
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 680px) {
+}
